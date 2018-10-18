@@ -20,9 +20,9 @@ public class CatFeederActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
-                DatabaseReference myRef = database.getReference("test");
+                DatabaseReference myRef = database.getReference("actions/feed");
 
-                myRef.setValue("Hello, World!");
+                myRef.setValue(1);
             }
         });
     }
